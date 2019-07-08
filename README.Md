@@ -7,7 +7,7 @@ Sdk for developing faspay API for PHP
 
 
 this sdk contains 2 parts of payment ,debit and credit, debit mostly use POST Rest API with json, all objects are wrapped
-for faspay credit - __[click here ](https://github.com/hilmanshini/FaspayApI_PHP/blob/master/README_CREDIT.MD)__ - 
+for faspay credit - __[click here ](https://github.com/hilmanshini/FaspayApI_Dotnet/blob/master/README_CREDIT.MD)__ - 
 
 
 for faspay debit you can follow docs below 
@@ -111,7 +111,7 @@ class FaspayCancelCallback : FaspayCancelPaymentCallback
             service.cancelTransaction(new FaspayCancelPaymentRequestWrapper("8986322540000760", "123123", "gatau", config), new FaspayCancelCallback());
 ```
 
-# Faspay Debit, jnquiry payment
+# Faspay Debit, inquiry payment
 
 to inquiry the status of payment
 
