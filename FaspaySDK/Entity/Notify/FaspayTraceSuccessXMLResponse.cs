@@ -9,12 +9,12 @@ namespace FaspaySDK.Entity.Notify
     public class FaspayTraceSuccessXMLResponse
     {
         public String response = "Payment Notification";
-        String trx_id;
-        String merchant_id;
-        String bill_no;
-        String response_code = "00";
-        String response_desc = "Success";
-        String response_date;
+        public String trx_id;
+        public String merchant_id;
+        public String bill_no;
+        public String response_code = "00";
+        public String response_desc = "Success";
+        public String response_date;
 
         public FaspayTraceSuccessXMLResponse(String trx_id, String merchant_id, String bill_no)
         {
@@ -25,7 +25,10 @@ namespace FaspaySDK.Entity.Notify
 
             response_date = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
         }
+        public FaspayTraceSuccessXMLResponse()
+        {
 
+        }
         public FaspayTraceSuccessXMLResponse(FaspayNotifyResponse response)
         {
             this.trx_id = response.getTrx_id();

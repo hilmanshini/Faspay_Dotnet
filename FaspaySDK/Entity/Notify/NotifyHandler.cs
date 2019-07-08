@@ -19,6 +19,7 @@ namespace FaspaySDK.Entity.Notify
             StringReader sr = new StringReader(rawXml);
             FaspayNotifyResponse response = (FaspaySDK.Entity.Notify.FaspayNotifyResponse)x.Deserialize(sr);
             FaspayTraceSuccessXMLResponse back = new FaspayTraceSuccessXMLResponse(response);
+            x = new XmlSerializer(typeof(FaspayTraceSuccessXMLResponse));
             StringWriter s = new StringWriter();
             x.Serialize(s, back, ns);
             return s.ToString();
