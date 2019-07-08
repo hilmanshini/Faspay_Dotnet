@@ -7,7 +7,7 @@ Sdk for developing faspay API for PHP
 
 
 this sdk contains 2 parts of payment ,debit and credit, debit mostly use POST Rest API with json, all objects are wrapped
-for faspay credit - __[click here ](https://github.com/hilmanshini/FaspayApI_Dotnet/blob/master/README_CREDIT.MD)__ - 
+for faspay credit - __[click here ](https://github.com/hilmanshini/Faspay_Dotnet/blob/master/README_CREDIT.MD)__ - 
 
 
 for faspay debit you can follow docs below 
